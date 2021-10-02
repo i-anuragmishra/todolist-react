@@ -46,7 +46,7 @@ export default function App() {
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.writetask}>
-        <TextInput style={styles.input} placeholder={"write a Task"} value={task} onChangeText={text => setTask(text)}>
+        <TextInput style={styles.input} placeholder={"Write a Task"} value={task} onChangeText={text => setTask(text)}>
 
         </TextInput>
         <TouchableOpacity onPress={() => handleaddTask()}>
